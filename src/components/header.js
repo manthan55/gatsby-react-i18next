@@ -6,11 +6,11 @@ export default function Header() {
     <div>
       <nav>
         <p>
-          <Link to="/users/1">Index</Link>
+          <Link to="/">Index</Link>
         </p>
 
         <p>
-          <Link to="/users/2">About</Link>
+          <Link to="/about">About</Link>
         </p>
       </nav>
     </div>
