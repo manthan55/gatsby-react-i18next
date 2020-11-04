@@ -7,7 +7,7 @@ export default function Home() {
   const { languages, originalPath } = useI18next()
   return (
     <div>
-      <h1>Index</h1>
+      <h1>About</h1>
       <br />
       <Trans>hello</Trans>
       <p>{t("morning")}</p>

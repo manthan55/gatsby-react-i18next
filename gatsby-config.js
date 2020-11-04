@@ -6,5 +6,24 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        path: `${__dirname}/locales`,
+        languages: [`es`, `en`],
+        defaultLanguage: `en`,
+  
+        // you can pass any i18next options
+        // pass following options to allow message content as a key
+        i18nextOptions: {
+          interpolation: {
+            escapeValue: false // not needed for react as it escapes by default
+          },
+          keySeparator: false,
+          nsSeparator: false
+        }
+      }
+    }
+  ],
 }
